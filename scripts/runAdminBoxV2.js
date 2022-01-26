@@ -8,9 +8,9 @@ async function main() {
 
     // Interact with new version contract
     console.log('_value: ', (await adminBox.retrieve()).toString());
-    // console.log('Increment 5...');
-    // await adminBox.increment(5);
-    // console.log('_value: ', (await adminBox.retrieve()).toString());
+    console.log('Increment 5...');
+    await adminBox.increment(5);
+    console.log('_value: ', (await adminBox.retrieve()).toString());
 }
 
 main();
