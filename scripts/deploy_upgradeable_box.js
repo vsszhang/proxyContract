@@ -2,6 +2,7 @@
 /// @author vsszhang
 /// @dev box implementation contract address: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
 /// owner address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+/// adminBox implementation contract address: 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6
 ///
 const { ethers, upgrades } = require('hardhat');
 

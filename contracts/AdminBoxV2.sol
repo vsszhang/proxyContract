@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract AdminBox is Initializable {
+contract AdminBoxV2 is Initializable {
     uint256 private _value;
     address private _admin;
 
@@ -13,8 +13,6 @@ contract AdminBox is Initializable {
         _admin = admin;        
     }
 
-    // constructor() initializer {}
-
     function store(uint256 value) public {
         require(msg.sender == _admin, 'AdminBox: not admin!');
         _value = value;
@@ -23,5 +21,11 @@ contract AdminBox is Initializable {
 
     function retrieve() public view returns (uint256) {
         return _value;
+    }
+
+    function increment(uint256 value) public {
+        require(msg.sender == _admin, "AdminBox: not Admin!");
+        _value = _value + value;
+        emit ValueChanged(_value); 
     }
 }
