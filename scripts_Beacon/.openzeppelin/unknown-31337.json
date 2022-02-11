@@ -1,0 +1,98 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xbadfc24eb23f4f4b2cb30633453ccc767f67230da03774d591471eb83e8ee6e7",
+      "kind": "beacon"
+    }
+  ],
+  "impls": {
+    "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0x650e0d21a5758baaf622ae6b9162259a165afdd967a63359e52d900c6b5858a6",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "AdminBox",
+            "label": "_value",
+            "type": "t_uint256",
+            "src": "contracts/AdminBox.sol:7"
+          },
+          {
+            "contract": "AdminBox",
+            "label": "_admin",
+            "type": "t_address",
+            "src": "contracts/AdminBox.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "c86a3e1af0f3d937a5f2d4ae27a3af510ba1a0c79cf7215d7a2f918fa967fcf1": {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x2a500f0187826386654a7e49851221598e3420a51b5acd586b911e433521fd0a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "AdminBoxV2",
+            "label": "_value",
+            "type": "t_uint256",
+            "src": "contracts/AdminBoxV2.sol:7"
+          },
+          {
+            "contract": "AdminBoxV2",
+            "label": "_admin",
+            "type": "t_address",
+            "src": "contracts/AdminBoxV2.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
