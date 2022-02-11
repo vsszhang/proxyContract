@@ -1,0 +1,972 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "5f9eff81a669679ee81081efdf0e4069591ca40ca71300b288cf6748500e3cf6",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBoxV2": {
+        "src": "contracts/AdminBoxV2.sol:6",
+        "version": {
+          "withMetadata": "9351dbb4dc4eac2914215fff5db774caa94eb22fe1ad5e04d5cc29b42547a255",
+          "withoutMetadata": "c86a3e1af0f3d937a5f2d4ae27a3af510ba1a0c79cf7215d7a2f918fa967fcf1",
+          "linkedWithoutMetadata": "c86a3e1af0f3d937a5f2d4ae27a3af510ba1a0c79cf7215d7a2f918fa967fcf1"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "store(uint256)",
+          "retrieve()",
+          "increment(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBoxV2",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBoxV2.sol:7"
+            },
+            {
+              "contract": "AdminBoxV2",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBoxV2.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "5f9eff81a669679ee81081efdf0e4069591ca40ca71300b288cf6748500e3cf6",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBoxV2.sol:6",
+        "version": {
+          "withMetadata": "83297d981bc4127b511ee9f568884ea9fbd2e16eedd9e32f6480fbae1a1bc2c1",
+          "withoutMetadata": "c86a3e1af0f3d937a5f2d4ae27a3af510ba1a0c79cf7215d7a2f918fa967fcf1",
+          "linkedWithoutMetadata": "c86a3e1af0f3d937a5f2d4ae27a3af510ba1a0c79cf7215d7a2f918fa967fcf1"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "store(uint256)",
+          "retrieve()",
+          "increment(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBoxV2.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBoxV2.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "5f9eff81a669679ee81081efdf0e4069591ca40ca71300b288cf6748500e3cf6",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:6",
+        "version": {
+          "withMetadata": "cfe94d0679261fc19f42a40533c48451afbe42f43e6c3243354977a15fd4cab7",
+          "withoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53",
+          "linkedWithoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "5f9eff81a669679ee81081efdf0e4069591ca40ca71300b288cf6748500e3cf6",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:6",
+        "version": {
+          "withMetadata": "ed217c7ead1dbfd9bdf9c86682f9bae151733cc685f2ce3613497d8f7aa96a0c",
+          "withoutMetadata": "e8200965283338e71a2b2e9fe6090e4e62c09a923e2096955bfb126a99c126e7",
+          "linkedWithoutMetadata": "e8200965283338e71a2b2e9fe6090e4e62c09a923e2096955bfb126a99c126e7"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AdminBox",
+            "src": "contracts/AdminBox.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "4633e7668bddc17b175766de0a0c8d6219b6304d2394c04405f7164bbc4dafd7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:6",
+        "version": {
+          "withMetadata": "3d057258050e4aa6fee0bc1b5d61d41f2af930c9e25cbb3d7db3bd179ac15922",
+          "withoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53",
+          "linkedWithoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "4633e7668bddc17b175766de0a0c8d6219b6304d2394c04405f7164bbc4dafd7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:34",
+        "version": {
+          "withMetadata": "a0487c34038bb89b47f8ac689ff42d5864e0e6660385c69c21d221fb79cec5d7",
+          "withoutMetadata": "6013909d12cd7fe206d60cd0e07e54925ffe8270ec29851ec939604d4022d0ee",
+          "linkedWithoutMetadata": "6013909d12cd7fe206d60cd0e07e54925ffe8270ec29851ec939604d4022d0ee"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:35"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:36"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "4633e7668bddc17b175766de0a0c8d6219b6304d2394c04405f7164bbc4dafd7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:6",
+        "version": {
+          "withMetadata": "df7e05e4504bfb51d1c2c62a800775f7f6d372e747a1fc3f27382d6ad46e97ba",
+          "withoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53",
+          "linkedWithoutMetadata": "c4044a0055165e6aeba0fb171b828fbb0888ca4a55357e80b98d2bb4dbf3af53"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "4633e7668bddc17b175766de0a0c8d6219b6304d2394c04405f7164bbc4dafd7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AdminBox": {
+        "src": "contracts/AdminBox.sol:6",
+        "version": {
+          "withMetadata": "7baec617fde6c6b86e3b329c9b01caa2ffa22478cd4692f0ba9243377d221963",
+          "withoutMetadata": "e8200965283338e71a2b2e9fe6090e4e62c09a923e2096955bfb126a99c126e7",
+          "linkedWithoutMetadata": "e8200965283338e71a2b2e9fe6090e4e62c09a923e2096955bfb126a99c126e7"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AdminBox",
+            "src": "contracts/AdminBox.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AdminBox",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/AdminBox.sol:7"
+            },
+            {
+              "contract": "AdminBox",
+              "label": "_admin",
+              "type": "t_address",
+              "src": "contracts/AdminBox.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "BoxV2": {
+        "src": "contracts/BoxV2.sol:4",
+        "version": {
+          "withMetadata": "907056b5dbbcd2d0a3dc30f12571e74ff1ef7c4122a24af2c31a65565ec6de10",
+          "withoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2",
+          "linkedWithoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "BoxV2",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/BoxV2.sol:5"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/Box.sol:4",
+        "version": {
+          "withMetadata": "1854b97b056c3232e254ac1101b317e5d6320af5900d6b316830be92f0deea93",
+          "withoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f",
+          "linkedWithoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/Box.sol:5"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/Box.sol:4",
+        "version": {
+          "withMetadata": "82229642cd55ee262fe91ba0108123a1fa9c78c33ac59b4fac425975f7922f27",
+          "withoutMetadata": "9b42bc00a0838da9c681ed37896bd4314d64148366baeefd161f346281bdb351",
+          "linkedWithoutMetadata": "9b42bc00a0838da9c681ed37896bd4314d64148366baeefd161f346281bdb351"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrive()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/Box.sol:5"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Greeter": {
+        "src": "contracts/Greeter.sol:6",
+        "version": {
+          "withMetadata": "0d4fcb95cdd3a6aefea8a9d8475ee55e1ea478205ad06a4b3f632a24226c9ce1",
+          "withoutMetadata": "0d4fcb95cdd3a6aefea8a9d8475ee55e1ea478205ad06a4b3f632a24226c9ce1",
+          "linkedWithoutMetadata": "0d4fcb95cdd3a6aefea8a9d8475ee55e1ea478205ad06a4b3f632a24226c9ce1"
+        },
+        "inherit": [],
+        "libraries": [
+          "console"
+        ],
+        "methods": [
+          "(string)",
+          "greet()",
+          "setGreeting(string)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Greeter",
+            "src": "contracts/Greeter.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Greeter",
+              "label": "greeting",
+              "type": "t_string_storage",
+              "src": "contracts/Greeter.sol:7"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "beae05454d6c24b0af2926d3f12cbd62c3db4a4f7dff423bd7ff2ddbe2972f20",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

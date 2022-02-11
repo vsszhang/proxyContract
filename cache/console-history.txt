@@ -1,0 +1,17 @@
+.exit
+console.log('_value: ', (await adminBox.retrieve()).toString());
+await adminBox.store(0);
+const adminBox = await AdminBoxV2.attach('0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6');
+const AdminBoxV2 = await ethers.getContractFactory('AdminBoxV2', owner);
+const owner = await ethers.getSigners();
+.exit
+(await box.retrieve()).toString();
+const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0');
+const Box = await ethers.getContractFactory('Box');
+.exit
+(await box.retrive()).toString();
+(box.retrive()).toString();
+ const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0');
+const box = await
+const Box = await ethers.getContractFactory('Box', owner);
+const owner = await ethers.getSigners();
