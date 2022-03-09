@@ -5,6 +5,11 @@
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
       "txHash": "0xbadfc24eb23f4f4b2cb30633453ccc767f67230da03774d591471eb83e8ee6e7",
       "kind": "beacon"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0x8ddd9238daa7c210604005bf53d58208369ec2ba8a34050a9f2ee2a822f2b405",
+      "kind": "beacon"
     }
   ],
   "impls": {
@@ -87,6 +92,46 @@
           },
           "t_address": {
             "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "2bdf07d20bbe1461895f47208df21da31a94359546f1e4a534bca5ceba716595": {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xccadea047428b84508ad3594c6b5d826c7fc9d7bb7be9f4360a097f69fa12c15",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "StoreNum",
+            "label": "_x",
+            "type": "t_uint256",
+            "src": "contracts/StoreNum.sol:7"
+          },
+          {
+            "contract": "StoreNum",
+            "label": "_y",
+            "type": "t_uint256",
+            "src": "contracts/StoreNum.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
           },
           "t_bool": {
             "label": "bool"
